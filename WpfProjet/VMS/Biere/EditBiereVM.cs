@@ -34,7 +34,7 @@ namespace WpfProjet.VMS.Biere
         {
             string test;
             test = Main.Data.DalBiere.GetOne(obj).biereImage;
-            string path = @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + test;
+            string path = @"Images\" + test;
             if (File.Exists(path))
             {
                 File.Delete(path);
@@ -80,7 +80,7 @@ namespace WpfProjet.VMS.Biere
                 //Image = Guid.NewGuid().ToString() + ".PNG";
                 //string path3 = test.FileName;
                 _path = test.FileName;
-                //File.Copy(path3, @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + Image);
+              
             }
         }
         public RelayCommand Edit
@@ -118,7 +118,7 @@ namespace WpfProjet.VMS.Biere
                     File.Delete(PathImage);
                 }
                 Image = Guid.NewGuid().ToString() + ".PNG";
-                File.Copy(_path, @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + Image);
+                File.Copy(_path, @"Images\" + Image);
             }
             Main.Data.EditerBiere(this.GetBiereWPF());
             Description = null;
@@ -203,7 +203,7 @@ namespace WpfProjet.VMS.Biere
         {
             get
             {
-                return @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + Image;
+                return @"Images\" + Image;
             }
         }
         public override string Nom
