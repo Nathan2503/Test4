@@ -129,7 +129,7 @@ namespace WpfProjet.VMS.Biere
         {
             get
             {
-                return @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + base.Image;
+                return @"Images\" + base.Image;
 
             }
 
