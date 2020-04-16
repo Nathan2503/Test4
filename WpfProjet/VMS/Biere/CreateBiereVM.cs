@@ -53,7 +53,7 @@ namespace WpfProjet.VMS.Biere
             if (_path != null)
             {
                // Image = Guid.NewGuid().ToString() + ".PNG";
-                File.Copy(_path, @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + Image);
+                File.Copy(_path, @"\Images\" + Image);
             }
             Main.Data.AjouterBiere(this.GetBiereWPF());
             Description = null;
@@ -89,7 +89,7 @@ namespace WpfProjet.VMS.Biere
                 Image = Guid.NewGuid().ToString() + ".PNG";
                 //string path3 = test.FileName;
                 _path = test.FileName;
-               // File.Copy(path3, @"C:\Users\Quentin.PC-BUCHE\Downloads\ProjetNet\ApplicationASP\AspProjetSol\AspProjet\Images\" + Image);
+              
             }
         }
         public override string Description
