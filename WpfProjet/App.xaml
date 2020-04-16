@@ -1,0 +1,10 @@
+﻿<Application x:Class="WpfProjet.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfProjet"
+             xmlns:vm="clr-namespace:WpfProjet.VMS"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <vm:MainVM x:Key="MainVM"/>
+    </Application.Resources>
+</Application>
